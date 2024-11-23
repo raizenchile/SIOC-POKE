@@ -27,18 +27,6 @@ h1 {
   line-height: 1.1;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
 
 form {
   width: 250px;
@@ -69,6 +57,10 @@ input {
   padding:5px;
   font-size: 20px;
 }
+.nombre-pokemon{
+  font-weight: bold;
+  font-size: 30px;
+}
 
 .poke-img{
   width: 150px;
@@ -76,9 +68,65 @@ input {
 
 }
 
+
 .pkmn-id{
   font-size:25px;
+  
 }
 .pkmn-tipo div{
   font-size:25px;
+}
+
+.btnBuscar{
+ margin-top: 0px;
+ font-size: 20px;
+}
+
+.btnBuscar:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+h1 {
+  text-align: center;
+  color:#222; font-size:40px; font-weight:800;
+  text-transform: uppercase;
+  word-spacing: 1px; letter-spacing:2px; color:#c50000;
+}
+h1 span {
+  line-height:2em; padding-bottom:15px;
+  text-transform: none;
+  font-size:.7em;
+  font-weight: normal;
+  color:#999; letter-spacing:-0.005em; word-spacing:1px;
+  letter-spacing:none;
+}
+h1:after, .six h1:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 45px;
+  height: 4px;
+  content: "";
+  right: 45px; 
+  margin:auto;
+  background-color: #ccc;
+}
+h1:before { 
+background-color:#d78b8b;
+  left:45px; width:90px;
 }

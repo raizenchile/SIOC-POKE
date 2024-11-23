@@ -7,6 +7,13 @@ const pkmnId = document.getElementById("idPkmn");
 const pkmnTipo = document.getElementById("tipoPkmn");
 const pkmnStats = document.getElementById("statsPkmn");
 
+//Se bloquea la tecla enter para que pinchen el botón Buscar
+document.querySelector('form').addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        event.preventDefault(); // Bloquea el envío del formulario
+    }
+});
+
 // Buscamos el Pokémon ingresado por el usuario al hacer clic en el botón
 const buscarPokemon = () => {
     // Obtenemos el valor del campo de entrada
@@ -72,3 +79,4 @@ const renderStatsPokemon = stats => {
         pkmnStats.appendChild(statElement);
     });
 };
+
