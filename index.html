@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sioc-POKE</title>
+    <script src="service.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+ <body>
+  <h1>POKEDEX IPSS</h1>
+  <form action="" onsubmit="buscarPokemon(event)">
+    <input type="text" name="pokemon" autocomplete="off" placeholder="Ingrese nombre del Pokémon">
+    <button type="button" onclick="buscarPokemon(event)">Buscar Pokémon</button>
+</form>
+
+  <div class="card">
+    <div id="nombrePkmn"></div>
+    <div id="imgPkmnCtn" class="img-container">
+      <img id="imgPkmn" class="poke-img" src="" alt="shadowPkmn">
+    </div>
+    <div id="idPkmn" class="pkmn-id"></div>
+    <div id="tipoPkmn" class="pkmn-tipo"></div>
+    <div id="statsPkmn" class="pkmn-stats"></div>
+  </div>
+
+ </body> 
+ </html>
