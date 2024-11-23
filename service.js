@@ -60,7 +60,7 @@ const renderTipoPokemon = types => {
     pkmnTipo.innerHTML = '';
     types.forEach(type => {
         const typeTextElement = document.createElement("div");
-        typeTextElement.textContent = type.type.name;
+        typeTextElement.textContent = type.type.name.charAt(0).toUpperCase() + type.type.name.slice(1);
         pkmnTipo.appendChild(typeTextElement);
     });
 };
@@ -72,7 +72,7 @@ const renderStatsPokemon = stats => {
         const statElement = document.createElement("div");
         const statElementNombre = document.createElement("div");
         const statElementValor = document.createElement("div");
-        statElementNombre.textContent = stat.stat.name;
+        statElementNombre.textContent = stat.stat.name.charAt(0).toUpperCase() + stat.stat.name.slice(1);;
         statElementValor.textContent = stat.base_stat;
         statElement.appendChild(statElementNombre);
         statElement.appendChild(statElementValor);
